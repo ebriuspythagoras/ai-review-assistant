@@ -32,12 +32,18 @@ This project demonstrates how LLMs can be used to automatically extract structur
 
 ## Project Structure
 ai_review_assistant/
-├── chains.py        # LLM pipeline
-├── pipeline.py      # business logic
-├── prompts.py       # prompt templates
-├── schemas.py       # output structure
-├── insights_db.py   # Pinecone integration
-├── analytics.py     # basic insights analytics
+
+├── chains.py        #LLM pipeline
+
+├── pipeline.py      #business logic
+
+├── prompts.py       #prompt templates
+
+├── schemas.py       #output structure
+
+├── insights_db.py   #Pinecone integration
+
+├── analytics.py     #basic insights analytics
 
 ## Setup
 1. Clone repository
@@ -48,15 +54,21 @@ ai_review_assistant/
 
 ## Environment Variables
 Create a `.env` file based on `.env.example`:
+
 GROQ_API_KEY=your_api_key_here
+
 GROQ_MODEL=your_groq_model_here
+
 PINECONE_API_KEY=your_api_key_here
+
 PINECONE_INDEX_NAME=customer-insights
+
 PINECONE_NAMESPACE=insights
 
 ## Example
 Input:
 "Horrible customer service! Your site is too slow!"
+
 Output:
 {
   "sentiment": "negative",
