@@ -1,0 +1,7 @@
+langchain>=0.1.17
+langchain-core
+langchain-groq
+python-dotenv
+pinecone
+sentence-transformers
+numpy<2
